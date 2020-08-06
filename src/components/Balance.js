@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Balance() {
   return (
-    <React.Fragment>
-      <h4>Your Balance</h4>
-      <h1>$0.00</h1>
-    </React.Fragment>
+    <div className="balance">
+      <h3>Your Balance</h3>
+      <h4>$0.00</h4>
+    </div>
   );
 }

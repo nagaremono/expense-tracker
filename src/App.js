@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container">
+      <div className="main">
         <Balance />
         <IncomeExpenses />
         <TransactionList />

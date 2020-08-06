@@ -8,28 +8,35 @@ export default function AddTransaction() {
     <React.Fragment>
       <h3>Add new transaction</h3>
       <form>
-        <div>
-          <label htmlFor="text">Text</label>
-          <input
-            type="text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder="Enter text..."
-          />
+        <div className="row">
+          <div className="input-field col s12">
+            <label htmlFor="text">Text</label>
+            <input
+              type="text"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              placeholder="Enter text..."
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="amount">
-            Amount <br />
-            (negative - expense, positive - income)
-          </label>
-          <input
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter amount..."
-          />
+        <div className="row">
+          <div className="input-field col s12 ">
+            <label htmlFor="amount">
+              Amount (negative - expense, positive - income)
+            </label>
+            <input
+              type="number"
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+              placeholder="Enter amount..."
+            />
+          </div>
         </div>
-        <button>Add transaction</button>
+        <div className="row">
+          <button className="waves-effect waves-light btn blue darken-4 col s12">
+            Add transaction
+          </button>
+        </div>
       </form>
     </React.Fragment>
   );

@@ -1,0 +1,29 @@
+#root {
+  display: grid;
+  place-items: center;
+  background-color: #fdfcfc;
+  min-height: 100vh;
+}
+
+.App {
+  width: 40vw;
+  background-color: #fff;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  border: 2px solid #000;
+}
+
+h1,
+.main {
+  grid-column: 2;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inc-exp-container div {
+  width: 40%;
+}
