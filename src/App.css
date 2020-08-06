@@ -27,3 +27,18 @@ h1,
 .inc-exp-container div {
   width: 40%;
 }
+
+.plus {
+  border-right: 8px solid rgb(1, 114, 1);
+}
+
+.minus {
+  border-right: 8px solid rgb(190, 4, 4);
+}
+
+.plus,
+.minus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
