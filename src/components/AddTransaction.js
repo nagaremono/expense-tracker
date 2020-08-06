@@ -1,13 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function AddTransaction() {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
 
+  const { addTransaction } = useContext(GlobalContext);
+
+  function onSubmit(event) {
+    event.preventDefault();
+
+    const newTransaction = {
+      id: uuidv4(),
+      text,
+      amount: +amount,
+    };
+
+    addTransaction(newTransaction);
+    clearField();
+  }
+
+  function clearField() {
+    setText('');
+    setAmount(0);
+  }
+
   return (
     <React.Fragment>
       <h3>New transaction</h3>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className="row">
           <div className="input-field col s12">
             <label htmlFor="text">Text</label>
