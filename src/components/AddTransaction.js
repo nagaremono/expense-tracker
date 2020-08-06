@@ -6,7 +6,7 @@ export default function AddTransaction() {
 
   return (
     <React.Fragment>
-      <h3>Add new transaction</h3>
+      <h3>New transaction</h3>
       <form>
         <div className="row">
           <div className="input-field col s12">
