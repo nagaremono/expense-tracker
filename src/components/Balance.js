@@ -10,8 +10,9 @@ export default function Balance() {
 
   return (
     <div className="balance">
-      <h3>Your Balance</h3>
-      <h4>${total}</h4>
+      <h4>
+        Your Balance <strong>${total}</strong>
+      </h4>
     </div>
   );
 }

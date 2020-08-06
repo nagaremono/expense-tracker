@@ -28,7 +28,7 @@ export default function AddTransaction() {
 
   return (
     <React.Fragment>
-      <h3>New transaction</h3>
+      <h4>New transaction</h4>
       <form onSubmit={onSubmit}>
         <div className="row">
           <div className="input-field col s12">
